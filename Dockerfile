@@ -1,6 +1,5 @@
 FROM ubuntu:precise
 
-RUN echo deb http://archive.ubuntu.com/ubuntu precise main universe > /etc/apt/sources.list
 RUN apt-get update
 RUN apt-get install -y apache2 libapache2-mod-php5 curl build-essential libpq-dev
 RUN curl -L -o pgpool-II-3.3.1.tar.gz http://www.pgpool.net/download.php?f=pgpool-II-3.3.1.tar.gz
